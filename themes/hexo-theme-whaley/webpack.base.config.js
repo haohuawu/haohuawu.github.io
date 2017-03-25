@@ -1,7 +1,7 @@
-var path = require('path')
-var webpack = require('webpack')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var browsers = [
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const browsers = [
   'ios_saf >= 7',
   'last 5 Android versions',
   'last 5 ChromeAndroid versions',
@@ -14,9 +14,7 @@ function resolve (dir) {
 }
 
 module.exports = {
-  entry: resolve('src/main.js'),
   output: {
-    path: resolve('source'),
     filename: 'js/[name].js',
     publicPath: '/'
   },

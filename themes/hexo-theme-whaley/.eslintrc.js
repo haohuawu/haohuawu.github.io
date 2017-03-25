@@ -19,7 +19,7 @@ module.exports = {
     'html/indent': '+2',
     'import/resolver': {
       'webpack': {
-        'config': 'webpack.config.js'
+        'config': 'webpack.base.config.js'
       }
     }
   },

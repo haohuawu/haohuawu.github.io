@@ -54,6 +54,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  .headerlink {
+    &:before {
+      content: '#';
+      color: $brand-color;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+}
+
 a {
   color: $brand-color;
   text-decoration: none;
@@ -72,12 +83,6 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
-}
-
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .icon {

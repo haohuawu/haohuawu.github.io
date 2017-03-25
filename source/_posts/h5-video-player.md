@@ -3,7 +3,6 @@ layout: post
 title:  "移动端H5视频播放的那些事儿"
 date: 2017-03-05
 music: "436514312"
-author: 吴浩华
 tags: [HTML5, Video, HTTP Live Streaming]
 ---
 

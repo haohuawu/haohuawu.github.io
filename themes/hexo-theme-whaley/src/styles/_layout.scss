@@ -100,21 +100,6 @@
 }
 
 .post {
-  h1, h2, h3, h4, h5, h6 {
-    &:not(.post-title) {
-      &:hover {
-        &:after {
-          display: inline-block;
-        }
-      }
-      &:after {
-        content: '#';
-        color: $brand-color;
-        margin-left: 10px;
-        display: none;
-      }
-    }
-  }
   &[data-site-index="post"] {
     float: left;
     width: 75%;

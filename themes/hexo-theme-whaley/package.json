@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "hexo theme designed for whaley",
   "scripts": {
-    "build": "webpack"
+    "build": "npm run build:blog & npm run build:api",
+    "build:blog": "webpack --config webpack.blog.config.js",
+    "build:api": "webpack --config webpack.api.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,6 @@
   "homepage": "https://github.com/haohuawu/hexo-theme-whaley#readme",
   "dependencies": {
     "@haohuawu/easy-ui.raf": "^0.1.1",
-    "bluebird": "^3.5.0",
     "fastclick": "^1.0.6",
     "lodash.merge": "^4.6.0",
     "lodash.throttle": "^4.1.1"
@@ -49,6 +50,7 @@
     "sass-loader": "^6.0.3",
     "style-loader": "^0.14.1",
     "url-loader": "^0.5.8",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-merge": "^4.1.0"
   }
 }

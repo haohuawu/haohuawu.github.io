@@ -2,7 +2,6 @@
 layout: post
 title:  "编写可维护的CSS"
 date: 2017-03-13
-author: 吴浩华
 tags: [CSS]
 ---
 

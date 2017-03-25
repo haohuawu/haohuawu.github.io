@@ -2,7 +2,6 @@
 title: 欢迎！让我们愉快的 markdown 吧
 date: 2017-03-22 11:32:39
 sticky: 9
-author: 吴浩华
 categories: [Tutorial]
 tags: [Markdown]
 ---

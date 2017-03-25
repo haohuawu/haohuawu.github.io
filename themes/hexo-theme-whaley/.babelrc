@@ -2,6 +2,6 @@
   "presets": [
     ["es2015", { "modules": false }]
   ],
-  "plugins": [["transform-runtime", { "polyfill": false }], "transform-object-rest-spread"],
+  "plugins": ["transform-runtime", "transform-object-rest-spread"],
   "comments": false
 }

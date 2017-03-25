@@ -13,7 +13,7 @@
     title = __('tag') + ' | ' + page.tag;
   }
 %>
-<% if (is_keynote()) { %>
+<% if (is_keynote() || is_api()) { %>
 <%- body %>
 <% } else { %>
 <!DOCTYPE html>

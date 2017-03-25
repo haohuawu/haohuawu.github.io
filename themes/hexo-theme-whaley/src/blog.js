@@ -1,5 +1,5 @@
-import 'styles/main.scss';
 import 'polyfills';
+import 'styles/blog.scss';
 import { contains, applyStyle, hasAttribute, applyAttributes } from 'shared/dom';
 import ImageViewer from 'components/image-viewer';
 
