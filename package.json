@@ -2,7 +2,7 @@
   "name": "haohuawu.github.io",
   "scripts": {
     "start": "hexo clean && hexo server",
-    "deploy": "hexo deploy"
+    "deploy": "hexo clean && hexo deploy"
   },
   "hexo": {
     "version": "3.2.2"
