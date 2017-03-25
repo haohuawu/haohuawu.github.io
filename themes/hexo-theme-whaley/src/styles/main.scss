@@ -1,0 +1,30 @@
+@import
+  "variables",
+  "mixins",
+  "placeholders",
+  "base",
+  "layout",
+  "syntax-highlight/github",
+  "toc",
+  "tag",
+  "category",
+  "plantuml"
+;
+
+.nav-menu {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  @include media-query($on-palm) {
+    display: inline-block;
+  }
+}
+
+.music-player {
+  text-align: center;
+}

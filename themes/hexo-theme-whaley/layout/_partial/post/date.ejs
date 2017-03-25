@@ -1,0 +1,4 @@
+<span class="post-date<% if (hasOwnProperty('className')) { %> <%= className %><% } %>">
+  <span class="icon icon---date"><% include ../assets/date.svg %></span>
+  <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
+</span>

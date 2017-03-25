@@ -1,0 +1,12 @@
+<div class="post-meta">
+  <% if (post.sticky) { %>
+  <span class="post---sticky post-meta--item">
+    <span class="icon icon---hot"><% include ../assets/hot.svg %></span>
+    <%= __('sticky') %>
+  </span>
+  <% } %>
+  <%- partial('date', { post: post, className: 'post-meta--item' }) %>
+  <%- partial('category', { post: post, className: 'post-meta--item' }) %>
+  <%- partial('tag', { post: post, className: 'post-meta--item' }) %>
+  <%- partial('author', { post: post, className: 'post-meta--item' }) %>
+</div>

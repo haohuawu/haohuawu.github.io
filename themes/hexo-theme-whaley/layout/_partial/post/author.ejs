@@ -1,0 +1,12 @@
+<%
+  var authors = post.author || [];
+  if (!Array.isArray(authors)) {
+    authors = [authors];
+  }
+%>
+<% if (authors.length) { %>
+<div class="post-authors<% if (hasOwnProperty('className')) { %> <%= className %><% } %>">
+  <span class="icon icon---author"><% include ../assets/author.svg %></span>
+  <%= authors.join(', ') %>
+</div>
+<% } %>

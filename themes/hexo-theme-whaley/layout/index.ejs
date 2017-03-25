@@ -1,0 +1,43 @@
+<%
+  function compareWithSticky(post, another) {
+    if (!post.sticky && !another.sticky) {
+      return 0;
+    }
+    if (post.sticky && !another.sticky) {
+      return -1;
+    }
+    if (!post.sticky && another.sticky) {
+      return 1;
+    }
+    return parseInt(another.sticky) - parseInt(post.sticky);
+  }
+%>
+<% page.posts.toArray().sort(compareWithSticky).forEach(function (post) { %>
+  <article
+    id="<%= post.layout %>-<%= post.slug %>"
+    class="post"
+    data-layout="<%= post.layout %>"
+    itemscope
+    itemprop="blogPost">
+    <!-- title -->
+    <% if (post.link || post.title) { %>
+    <%- partial('_partial/post/title', { post: post }) %>
+    <% } %>
+    <!-- meta -->
+    <%- partial('_partial/post/meta', { post: post }) %>
+    <!-- gallery -->
+    <%- partial('_partial/post/gallery', { post: post }) %>
+    <!-- entry -->
+    <% if (post.excerpt) { %>
+    <main class="post--entry" itemprop="articleBody">
+      <%- post.excerpt %>
+      <a class="post--more-link" href="<%- url_for(post.path) %>"><%= __('more') %></a>
+    </main>
+    <% } %>
+  </article>
+<% }) %>
+<% if (page.total > 1) { %>
+<nav class="page-nav">
+  <%- paginator({ prev_text: __('prev'), next_text: __('next') }) %>
+</nav>
+<% } %>

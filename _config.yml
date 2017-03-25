@@ -1,0 +1,45 @@
+title: 天枢
+subtitle: 他强由他强，清风拂山岗
+description: 他强由他强，清风拂山岗
+language: zh-CN
+timezone: Asia/Shanghai
+
+url: https://haohuawu.github.io
+root: /
+permalink: :year/:month/:day/:title/
+
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link: true
+filename_case: 1
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+per_page: 5
+pagination_dir: page
+
+theme: hexo-theme-whaley
+
+deploy:
+  type: git
+  repo: git@github.com:haohuawu/haohuawu.github.io.git
+  branch: master
+  message: "发表博客: {{ now('YYYY-MM-DD HH:mm:ss') }}"

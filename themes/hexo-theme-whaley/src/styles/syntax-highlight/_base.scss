@@ -1,0 +1,343 @@
+code {
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.highlight {
+  position: relative;
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  margin: 1em 0;
+  table {
+    border-collapse: collapse;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.75em;
+    padding: 0.2em 1em;
+  }
+  .code {
+    border: none;
+    padding: 0 15px;
+  }
+  .gutter {
+    padding: 0 0.4em;
+    text-align: center;
+    min-width: 20px;
+  }
+  .line {
+    &:after {
+      content: '';
+      display: inline-block;
+    }
+  }
+  &.apache:after {
+    content: "Apache";
+  }
+  &.bash:after {
+    content: "Bash";
+  }
+  &.coffeescript:after {
+    content: "CoffeeScript"
+  }
+  &.cpp:after {
+    content: "C++";
+  }
+  &.cs:after {
+    content: "C#";
+  }
+  &.css:after {
+    content: "CSS";
+  }
+  &.diff:after {
+    content: "Diff";
+  }
+  &.http:after {
+    content: "HTTP";
+  }
+  &.ini:after {
+    content: "Ini";
+  }
+  &.java:after {
+    content: "Java";
+  }
+  &.javascript:after {
+    content: "Javascript";
+  }
+  &.json:after {
+    content: "JSON";
+  }
+  &.makefile:after {
+    content: "Makefile";
+  }
+  &.markdown:after {
+    content: "Markdown";
+  }
+  &.nginx:after {
+    content: "Nginx";
+  }
+  &.objectivec, &.obj-c {
+    &:after {
+      content: "Objective-C";
+    }
+  }
+  &.perl:after {
+    content: "Perl";
+  }
+  &.php:after {
+    content: "PHP";
+  }
+  &.python:after {
+    content: "Python";
+  }
+  &.ruby:after {
+    content: "Ruby";
+  }
+  &.sql:after {
+    content: "SQL";
+  }
+  &.html:after {
+    content: "HTML";
+  }
+  &.xml:after {
+    content: "XML";
+  }
+  &.armasm:after {
+    content: "ARM Assembly";
+  }
+  &.avrasm:after {
+    content: "AVR Assembler";
+  }
+  &.llvm:after {
+    content: "LLVM IR";
+  }
+  &.mipsasm:after {
+    content: "MIPS Assembly";
+  }
+  &.x86asm:after {
+    content: "Intel x86 Assembly";
+  }
+  &.crmsh:after {
+    content: "crmsh";
+  }
+  &.dns:after {
+    content: "DNS Zone file";
+  }
+  &.dockerfile:after {
+    content: "Dockerfile";
+  }
+  &.dsconfig:after {
+    content: "dsconfig";
+  }
+  &.ldif:after {
+    content: "LDIF";
+  }
+  &.pf:after {
+    content: "pf";
+  }
+  &.puppet:after {
+    content: "Puppet";
+  }
+  &.roboconf:after {
+    content: "Roboconf";
+  }
+  &.yaml:after {
+    content: "YAML";
+  }
+  &.less:after {
+    content: "Less";
+  }
+  &.scss:after {
+    content: "SCSS";
+  }
+  &.stylus:after {
+    content: "Stylus";
+  }
+  &.1c:after {
+    content: "1C";
+  }
+  &.axapta:after {
+    content: "Axapta";
+  }
+  &.cos:after {
+    content: "Caché Object Script";
+  }
+  &.livecodeserver:after {
+    content: "LiveCode";
+  }
+  &.ruleslanguage:after {
+    content: "Oracle Rules Language";
+  }
+  &.clean:after {
+    content: "Clean";
+  }
+  &.coq:after {
+    content: "Coq";
+  }
+  &.elixir:after {
+    content: "Elixir";
+  }
+  &.elm:after {
+    content: "Elm";
+  }
+  &.erlang-repl:after {
+    content: "Erlang REPL";
+  }
+  &.erlang:after {
+    content: "Erlang";
+  }
+  &.flix:after {
+    content: "Flix";
+  }
+  &.fsharp:after {
+    content: "F#";
+  }
+  &.haskell:after {
+    content: "Haskell";
+  }
+  &.ocaml:after {
+    content: "OCaml";
+  }
+  &.scala:after {
+    content: "Scala";
+  }
+  &.sml:after {
+    content: "SML";
+  }
+  &.xquery:after {
+    content: "XQuery";
+  }
+  &.glsl:after {
+    content: "GLSL";
+  }
+  &.mel:after {
+    content: "MEL";
+  }
+  &.processing:after {
+    content: "Processing";
+  }
+  &.rib:after {
+    content: "RenderMan RIB";
+  }
+  &.rsl:after {
+    content: "RenderMan RSL";
+  }
+  &.clojure-repl:after {
+    content: "Clojure REPL";
+  }
+  &.clojure:after {
+    content: "Clojure";
+  }
+  &.hy:after {
+    content: "Hy";
+  }
+  &.lisp:after {
+    content: "Lisp";
+  }
+  &.scheme:after {
+    content: "Scheme";
+  }
+  &.asciidoc:after {
+    content: "AsciiDoc";
+  }
+  &.tex:after {
+    content: "Tex";
+  }
+  &.capnproto:after {
+    content: "Cap’n Proto";
+  }
+  &.protobuf:after {
+    content: "Protocol Buffers";
+  }
+  &.thrift:after {
+    content: "Thrift";
+  }
+  &.fortran:after {
+    content: "Fortran";
+  }
+  &.gams:after {
+    content: "GAMS";
+  }
+  &.gauss:after {
+    content: "GAUSS";
+  }
+  &.irpf90:after {
+    content: "IRPF90";
+  }
+  &.mathematica:after {
+    content: "Mathematica";
+  }
+  &.matlab:after {
+    content: "Matlab";
+  }
+  &.maxima:after {
+    content: "Maxima";
+  }
+  &.mizar:after {
+    content: "Mizar";
+  }
+  &.openscad:after {
+    content: "OpenSCAD";
+  }
+  &.r:after {
+    content: "R";
+  }
+  &.scilab:after {
+    content: "Scilab";
+  }
+  &.stan:after {
+    content: "Stan";
+  }
+  &.stata:after {
+    content: "Stata";
+  }
+  &.actionscript:after {
+    content: "ActionScript";
+  }
+  &.applescript:after {
+    content: "AppleScript";
+  }
+  &.autohotkey:after {
+    content: "AutoHotkey";
+  }
+  &.autoit:after {
+    content: "AutoIt";
+  }
+  &.dart:after {
+    content: "Dart";
+  }
+  &.hsp:after {
+    content: "HSP";
+  }
+  &.livescript:after {
+    content: "LiveScript";
+  }
+  &.lsl:after {
+    content: "Linden Scripting Language";
+  }
+  &.lua:after {
+    content: "Lua";
+  }
+  &.moonscript:after {
+    content: "MoonScript";
+  }
+  &.qml:after {
+    content: "QML";
+  }
+  &.typescript:after {
+    content: "TypeScript";
+  }
+  &.vbscript-html:after {
+    content: "VBScript in HTML";
+  }
+  &.vbscript:after {
+    content: "VBScript";
+  }
+  &.vim:after {
+    content: "Vim Script";
+  }
+}

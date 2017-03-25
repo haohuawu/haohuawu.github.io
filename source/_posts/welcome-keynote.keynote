@@ -1,0 +1,39 @@
+---
+layout: keynote
+title: 欢迎！这是一篇 keynote 教程
+date: 2017-03-23 11:32:39
+sticky: 8
+author: 吴浩华
+categories: [Tutorial]
+tags: [Keynote]
+---
+<section>
+  <h3>欢迎！这是一篇 keynote 教程</h3>
+</section>
+<section>
+  <section>
+    <h3>1. FrontMatter</h3>
+    <p>welcome-keynote.keynote</p>
+    <pre>
+      <code>
+        ---
+        layout: keynote
+        title: 欢迎！这是一篇 keynote 教程
+        date: 2017-03-23 11:32:39
+        sticky: 8
+        author: 吴浩华
+        categories: [Tutorial]
+        tags: [Keynote]
+        ---
+      </code>
+    </pre>
+    每篇 keynote 文件以 <mark>.keynote</mark> 为后缀名，front matter 添加 layout 属性为 keynote
+  </section>
+  <section>
+    <p>所有使用方式可参考 {% link reveal.js http://lab.hakim.se/reveal-js/ %}</p>
+    <p>同时支持所有已安装的 {% link "Hexo 标签" https://hexo.io/docs/tag-plugins.html %}</p>
+  </section>
+</section>
+<section>
+  完了，就这么简单😉
+</section>

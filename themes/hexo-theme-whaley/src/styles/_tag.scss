@@ -1,0 +1,26 @@
+.tag-list {
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  @extend %clearfix;
+  &--item {
+    float: left;
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+  &--link {
+    color: $grey-color;
+    &, &:hover {
+      text-decoration: none;
+    }
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+.post-tags {
+  line-height: 1;
+}

@@ -1,0 +1,6 @@
+<% if (post.tags && post.tags.length) { %>
+<div class="post-tags<% if (hasOwnProperty('className')) { %> <%= className %><% } %>">
+  <span class="icon icon---tag"><% include ../assets/tag.svg %></span>
+  <%- list_tags(post.tags) %>
+</div>
+<% } %>

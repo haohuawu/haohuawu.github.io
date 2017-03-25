@@ -1,0 +1,6 @@
+<% if (post.categories && post.categories.length) { %>
+<div class="post-categories<% if (hasOwnProperty('className')) { %> <%= className %><% } %>">
+  <span class="icon icon---category"><% include ../assets/category.svg %></span>
+  <%- list_categories(post.categories) %>
+</div>
+<% } %>

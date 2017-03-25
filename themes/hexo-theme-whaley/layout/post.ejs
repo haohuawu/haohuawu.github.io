@@ -1,0 +1,35 @@
+<article
+  id="<%= page.layout %>-<%= page.slug %>"
+  class="post"
+  data-layout="<%= page.layout %>"
+  data-site-index="post"
+  itemscope
+  itemprop="blogPost">
+  <!-- title -->
+  <% if (page.link || page.title) { %>
+  <%- partial('_partial/post/title', { post: page }) %>
+  <% } %>
+  <!-- meta -->
+  <%- partial('_partial/post/meta', { post: page }) %>
+  <!-- gallery -->
+  <%- partial('_partial/post/gallery', { post: page }) %>
+  <!-- entry -->
+  <main class="post--entry" itemprop="articleBody">
+    <%- page.content %>
+  </main>
+  <!-- navigation -->
+  <%- partial('_partial/post/nav', { post: page, showTitle: true }) %>
+  <!-- footer -->
+  <% if (page.comments && config.disqus_shortname) { %>
+  <footer class="post--footer">
+    <a href="<%- page.permalink %>#disqus_thread" class="post-comment--link"><%= __('comment') %></a>
+  </footer>
+  <% } %>
+</article>
+<aside class="side-bar">
+  <div class="side-bar--wrapper">
+    <%- partial('_partial/post/nav', { post: page, showTitle: false }) %>
+    <!-- toc -->
+    <%- toc(page.content) %>
+  </div>
+</aside>

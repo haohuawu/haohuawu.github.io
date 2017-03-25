@@ -1,0 +1,50 @@
+.toc {
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  &[empty]:before {
+    content: '无';
+    color: $grey-color-light;
+    display: block;
+    text-align: center;
+  }
+  &--item {
+    &--anchor {
+      padding: 0 9px 0 6px;
+      outline: none;
+      border-left: 3px solid transparent;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 30px;
+      @include media-query($on-palm) {
+        border-left-color: transparent;
+      }
+      &:hover, &:active {
+        text-decoration: none;
+        border-left-color: #424242;
+        background-color: #e2e2e2;
+      }
+      &[data-depth="1"] {
+        padding-left: 6px + 12px;
+      }
+      &[data-depth="2"] {
+        padding-left: 6px + 12px * 2;
+      }
+      &[data-depth="3"] {
+        padding-left: 6px + 12px * 3;
+      }
+      &[data-depth="4"] {
+        padding-left: 6px + 12px * 4;
+      }
+      &[data-depth="5"] {
+        padding-left: 6px + 12px * 5;
+      }
+    }
+  }
+  &--number {
+    margin-right: 10px;
+  }
+}

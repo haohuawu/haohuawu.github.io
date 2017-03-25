@@ -1,0 +1,43 @@
+.plantuml {
+  font-size: 0;
+  &--content {
+    position: relative;
+    border: 1px solid #f8f8f8;
+    &:before {
+      content: 'PlantUML';
+      font-size: 16px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 2px 8px;
+      text-align: center;
+    }
+  }
+  &[active] {
+    .plantuml--overlay {
+      position: fixed;
+      z-index: 9;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+    }
+    .plantuml--content {
+      &:before {
+        display: none;
+      }
+      position: fixed;
+      border: none;
+      z-index: 99;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      overflow-y: auto;
+    }
+  }
+}

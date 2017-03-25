@@ -1,0 +1,32 @@
+<%
+  var archives = page.posts.reduce(function (acc, post) {
+    var year = post.date.year();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  }, {});
+%>
+<div class="post-archives">
+<% Object.keys(archives).forEach(function (year) { %>
+  <div class="post-archive">
+    <h1 class="post-archive--title"><%= year %></h1>
+    <ul class="post-archive--list">
+      <% archives[year].forEach(function (post) { %>
+       <li class="post-archive-item">
+          <% if (post.link || post.title) { %>
+          <%- partial('_partial/post/title', { post: post }) %>
+          <% } %>
+          <time class="post-time" datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, 'MM-DD') %></time>
+       </li>
+      <% }) %>
+    </ul>
+  </div>
+<% }) %>
+</div>
+<% if (page.total > 1) { %>
+<nav class="page-nav">
+  <%- paginator({ prev_text: __('prev'), next_text: __('next') }) %>
+</nav>
+<% } %>

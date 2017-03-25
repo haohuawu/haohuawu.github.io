@@ -1,0 +1,33 @@
+<%
+  var title = page.title || config.title;
+  if (is_archive()) {
+    title = __('archive');
+    if (is_month()) {
+      title += ' | ' + page.year + '-' + page.month;
+    } else if (is_year()) {
+      title += ' | ' + page.year;
+    }
+  } else if (is_category()) {
+    title = __('category') + ' | ' + page.category;
+  } else if (is_tag()) {
+    title = __('tag') + ' | ' + page.tag;
+  }
+%>
+<% if (is_keynote()) { %>
+<%- body %>
+<% } else { %>
+<!DOCTYPE html>
+<html>
+  <%- partial('_partial/head', { title: title }) %>
+  <body>
+    <%- partial('_partial/header') %>
+    <main class="site--content" aria-label="Content">
+      <div class="wrapper">
+        <%- body %>
+      </div>
+    </main>
+    <%- partial('_partial/footer', { title: title }) %>
+    <%- partial('_partial/after-footer') %>
+  </body>
+</html>
+<% } %>

@@ -1,0 +1,8 @@
+<header class="site--header" role="banner">
+  <div class="wrapper">
+    <a class="site--title" href="<%= '/' %>"><%= config.title %></a>
+    <% if (is_post()) { %>
+    <a class="nav-menu" href="javascript: void 0;"><% include assets/menu.svg %></a>
+    <% } %>
+  </div>
+</header>
