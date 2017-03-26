@@ -1,18 +1,7 @@
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
 }
 
 h1, h2, h3, h4, h5, h6,

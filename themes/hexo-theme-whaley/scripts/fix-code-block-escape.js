@@ -1,6 +1,6 @@
 const rEscapeContent = /<escape(?:[^>]*)>([\s\S]*?)<\/escape>/g;
-const placeholder = '\uFFFD';
-const rPlaceholder = /(?:<|&lt;)\!--\uFFFD(\d+)--(?:>|&gt;)/g;
+const placeholder = '\u003A';
+const rPlaceholder = /(?:<|&lt;)\!--\u003A(\d+)--(?:>|&gt;)/g;
 const cache = [];
 
 function escapeContent(str) {
