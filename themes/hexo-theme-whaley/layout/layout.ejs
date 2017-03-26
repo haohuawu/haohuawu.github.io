@@ -18,16 +18,70 @@
 <% } else { %>
 <!DOCTYPE html>
 <html>
-  <%- partial('_partial/head', { title: title }) %>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title><%= title %></title>
+    <%- open_graph() %>
+    <%- css('assets/blog/styles/main.css') %>
+  </head>
   <body>
-    <%- partial('_partial/header') %>
+    <header class="site--header" role="banner">
+      <div class="wrapper">
+        <a class="site--title" href="<%= '/' %>"><%= config.title %></a>
+        <% if (is_post()) { %>
+        <a class="nav-menu" href="javascript: void 0;"><% include _partial/assets/menu.svg %></a>
+        <% } %>
+      </div>
+    </header>
     <main class="site--content" aria-label="Content">
       <div class="wrapper">
         <%- body %>
       </div>
     </main>
-    <%- partial('_partial/footer', { title: title }) %>
-    <%- partial('_partial/after-footer') %>
+    <footer class="site--footer">
+      <div class="wrapper">
+        <h2 class="footer--heading"><%= config.title %></h2>
+        <div class="footer-col-wrapper">
+        <% if (config.email || config.github) { %>
+          <div class="footer-col footer-col---1">
+            <ul class="contact-list">
+              <% if (config.email) { %>
+              <li>
+                <a href="mailto:<%- config.email %>">
+                  <span class="icon icon---email"><% include _partial/assets/icon-email.svg %></span>
+                  <span class="email"><%- config.email %></span>
+                </a>
+              </li>
+              <% } %>
+              <% if (config.github) { %>
+              <li>
+                <a href="https://github.com/<%- config.github %>">
+                  <span class="icon icon---email"><% include _partial/assets/icon-github.svg %></span>
+                  <span class="email"><%- config.github %></span>
+                </a>
+              </li>
+              <% } %>
+            </ul>
+          </div>
+        <% } %>
+          <div class="footer-col footer-col---3">
+            <ul class="slash-list">
+              <li><%= config.description %></li>
+              <li>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+                  <img alt="知识共享许可协议" style="border-width: 0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <%- js('assets/blog/js/manifest.js') %>
+    <%- js('assets/blog/js/vendor.js') %>
+    <%- js('assets/blog/js/main.js') %>
   </body>
 </html>
 <% } %>

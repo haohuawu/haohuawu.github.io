@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><%= page.title %></title>
-    <link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
-    <!-- <link rel="stylesheet" href="/reveal.js/css/theme/beige.css"> -->
-    <link rel="stylesheet" href="/reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="/assets/reveal.js/css/reveal.min.css">
+    <!-- <link rel="stylesheet" href="/assets/reveal.js/css/theme/beige.css"> -->
+    <link rel="stylesheet" href="/assets/reveal.js/css/theme/league.css">
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="/assets/reveal.js/lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
-    <script type="text/javascript" src="/reveal.js/plugin/highlight/highlight.min.js"></script>
+    <script type="text/javascript" src="/assets/reveal.js/plugin/highlight/highlight.min.js"></script>
     <script type="text/javascript">
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.css' : '/reveal.js/css/print/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal.js/css/print/pdf.css' : '/assets/reveal.js/css/print/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
     </script>
   </head>
@@ -25,8 +25,8 @@
         <%- page.content %>
       </div>
     </div>
-    <script type="text/javascript" src="/reveal.js/lib/js/head.min.js"></script>
-    <script type="text/javascript" src="/reveal.js/js/reveal.js"></script>
+    <script type="text/javascript" src="/assets/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="/assets/reveal.js/js/reveal.js"></script>
     <script type="text/javascript">
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
@@ -43,10 +43,10 @@
         hideAddressBar: true,
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-          { src: '/reveal.js/plugin/markdown/marked.js' },
-          { src: '/reveal.js/plugin/markdown/markdown.js' },
-          { src: '/reveal.js/plugin/notes/notes.js', async: true },
-          { src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: '/assets/reveal.js/plugin/markdown/marked.js' },
+          { src: '/assets/reveal.js/plugin/markdown/markdown.js' },
+          { src: '/assets/reveal.js/plugin/notes/notes.js', async: true },
+          { src: '/assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>

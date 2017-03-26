@@ -5,6 +5,6 @@ const baseWebpackConfig = require('./webpack.base.config')
 module.exports = merge(baseWebpackConfig, {
   entry: 'src/api.js',
   output: {
-    path: path.resolve(__dirname, 'source/api')
+    path: path.resolve(__dirname, 'source/assets/api')
   }
 })
