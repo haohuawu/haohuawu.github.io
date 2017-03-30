@@ -1,6 +1,7 @@
 ---
 title: CSS 权重及优先级
 date: 2017-03-28 16:17:22
+sticky: 0
 tags:
   - CSS
 ---

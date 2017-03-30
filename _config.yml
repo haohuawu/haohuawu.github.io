@@ -33,6 +33,9 @@ tag_map:
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
+index_generator:
+  order_by: -sticky -date
+
 per_page: 5
 pagination_dir: page
 

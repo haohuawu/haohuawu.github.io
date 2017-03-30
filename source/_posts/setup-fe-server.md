@@ -1,6 +1,7 @@
 ---
 title: 搭建前端开发 Ubuntu 服务器
-date: 2017-03-15
+date: 2017-03-15 16:17:22
+sticky: 0
 tags:
   - Ubuntu
 ---
