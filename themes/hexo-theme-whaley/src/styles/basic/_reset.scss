@@ -1,5 +1,4 @@
 html, body {
-  user-select: none;
   -webkit-touch-callout: none;
   -webkit-text-size-adjust: none;
 }
@@ -24,6 +23,10 @@ body {
   vertical-align: middle;
 }
 
+iframe {
+  border: none;
+}
+
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -36,13 +39,12 @@ input[type=number] {
 }
 
 p {
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 select {
@@ -66,7 +68,7 @@ input {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

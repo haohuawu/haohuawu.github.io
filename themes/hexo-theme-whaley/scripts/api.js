@@ -15,7 +15,7 @@ function render(content) {
   });
 }
 
-hexo.extend.helper.register('is_api', function isApiHelper() {
+hexo.extend.helper.register('is_api', function isAPIHelper() {
   return this.page.layout === 'api';
 });
 
