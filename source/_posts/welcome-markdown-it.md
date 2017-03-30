@@ -18,7 +18,7 @@ tags:
 
 ### Markdown 语法
 
-Markdown 语法可以参照这个[教程](https://guides.github.com/features/mastering-markdown/)。
+Markdown 语法可以参照这个[教程](https://guides.github.com/features/mastering-markdown/)或者这个[Daring Fireball Markdown](http://daringfireball.net/projects/markdown/)。
 
 ### git 仓库目录结构
 
