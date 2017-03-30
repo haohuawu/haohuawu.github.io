@@ -3,8 +3,10 @@ layout: keynote
 title: 欢迎！这是一篇 keynote 教程
 date: 2017-03-23 11:32:39
 sticky: 8
-categories: [Tutorial]
-tags: [Keynote]
+categories:
+  - Tutorial
+tags:
+  - Keynote
 ---
 <section>
   <h3>欢迎！这是一篇 keynote 教程</h3>

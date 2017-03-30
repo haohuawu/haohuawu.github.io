@@ -3,8 +3,10 @@ layout: api
 title: 欢迎！这是一篇 api 文档教程
 date: 2017-03-23 11:32:39
 sticky: 7
-categories: [Tutorial]
-tags: [API]
+categories:
+  - Tutorial
+tags:
+  - API
 ---
 {% api 简介 %}
 ### 简介

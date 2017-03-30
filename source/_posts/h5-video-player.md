@@ -1,9 +1,11 @@
 ---
-layout: post
-title:  "移动端H5视频播放的那些事儿"
-date: 2017-03-05
+title: 移动端H5视频播放的那些事儿
+date: 2017-03-05 12:17:22
 music: "436514312"
-tags: [HTML5, Video, HTTP Live Streaming]
+tags:
+  - HTML5
+  - Video
+  - HTTP Live Streaming
 ---
 
 移动端使用H5`video`标签能在网页中直接播放视频而无需安装flash插件，结合js与css能创造出比帧动画表现力更丰富的交互（想想炫酷的WebGL加上video），同时，GIF 相比视频，以 H.264 编码的 MP4 为例，带宽占用为十二倍，电池消耗为两倍。没有声音的`video`元素很适合用作网页背景，取代 GIF。2010年，乔布斯预言了HTML5的未来，相比flash，H5在移动端有着友好的支持：

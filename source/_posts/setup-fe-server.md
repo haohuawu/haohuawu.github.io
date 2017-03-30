@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "搭建前端开发 Ubuntu 服务器"
+title: 搭建前端开发 Ubuntu 服务器
 date: 2017-03-15
-tags: [Ubuntu]
+tags:
+  - Ubuntu
 ---
 
 ## 下载ISO镜像，刻录U盘
