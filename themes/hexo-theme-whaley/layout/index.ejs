@@ -1,18 +1,4 @@
-<%
-  function compareWithSticky(post, another) {
-    if (!post.sticky && !another.sticky) {
-      return 0;
-    }
-    if (post.sticky && !another.sticky) {
-      return -1;
-    }
-    if (!post.sticky && another.sticky) {
-      return 1;
-    }
-    return parseInt(another.sticky) - parseInt(post.sticky);
-  }
-%>
-<% page.posts.toArray().sort(compareWithSticky).forEach(function (post) { %>
+<% page.posts.each(function (post) { %>
   <article
     id="<%= post.layout %>-<%= post.slug %>"
     class="post"
